@@ -1,0 +1,25 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+.env
+.venv/
+.env.*
+*.env
+
+# OS / Editor
+.DS_Store
+.vscode/
+
+# Data
+data/chroma_store/
+data/tmp/
+*.npy
+
+# Streamlit
+.streamlit/
+
+# Jupyter
+.ipynb_checkpoints/
