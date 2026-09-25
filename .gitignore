@@ -1,25 +1,12 @@
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-*$py.class
-
-# Environments
 .env
 .venv/
-.env.*
-*.env
-
-# OS / Editor
-.DS_Store
-.vscode/
-
-# Data
-data/chroma_store/
-data/tmp/
-*.npy
-
-# Streamlit
-.streamlit/
-
-# Jupyter
+venv/
+__pycache__/
+*.pyc
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
 .ipynb_checkpoints/
+.DS_Store

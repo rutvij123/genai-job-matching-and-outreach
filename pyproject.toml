@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "job-outreach"
+version = "0.2.0"
+description = "Scrape job listings, match them to a resume with embeddings, and draft tailored cold emails with an LLM."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi>=0.115",
+    "uvicorn[standard]>=0.30",
+    "python-multipart>=0.0.9",
+    "pydantic>=2.8",
+    "pydantic-settings>=2.4",
+    "langchain-core>=0.3",
+    "langchain-community>=0.3",
+    "langchain-groq>=0.2",
+    "beautifulsoup4>=4.12",
+    "requests>=2.32",
+    "chromadb>=0.5.5",
+    "sentence-transformers>=3.0",
+    "pypdf>=4.3",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "httpx>=0.27", "ruff>=0.6"]
+
+[project.scripts]
+job-outreach-api = "job_outreach.api.main:run"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+extend-exclude = ["notebooks"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+ignore = ["B008"]  # FastAPI's Depends()/File() in defaults is idiomatic
