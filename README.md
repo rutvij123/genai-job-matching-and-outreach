@@ -1,5 +1,7 @@
 # Job Matching & Outreach
 
+![CI](https://github.com/rutvij123/genai-job-matching-and-outreach/actions/workflows/ci.yml/badge.svg)
+
 A REST API that scrapes a company's careers page, extracts job postings with an LLM, ranks them against your resume using semantic embeddings, and drafts a tailored cold email for the best match.
 
 **Backend:** Python, FastAPI, Pydantic, LangChain, Groq (GPT-OSS 120B), SentenceTransformers, ChromaDB
