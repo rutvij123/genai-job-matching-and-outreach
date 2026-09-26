@@ -10,6 +10,17 @@ A REST API that scrapes a company's careers page, extracts job postings with an 
 
 **Infra:** Docker, Docker Compose, Nginx, GitHub Actions
 
+## Screenshots
+<img width="1421" height="881" alt="Screenshot 2026-09-24 at 4 53 22 PM" src="https://github.com/user-attachments/assets/f4cf61a1-055a-445c-b573-8bd4a8cc7c73" />
+
+<img width="1422" height="878" alt="Screenshot 2026-09-24 at 4 52 42 PM" src="https://github.com/user-attachments/assets/9d53581f-7318-4529-aec3-42a0eab39c7b" />
+
+<img width="1417" height="871" alt="Screenshot 2026-09-25 at 7 24 49 PM" src="https://github.com/user-attachments/assets/47f1d649-b728-4cb5-901f-891d3b24697b" />
+
+
+
+
+
 ## Architecture
 
 ```mermaid
